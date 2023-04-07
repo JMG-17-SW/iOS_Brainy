@@ -12,6 +12,7 @@
 		AAE173DC29DEC865000BBE2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE173DB29DEC865000BBE2B /* Assets.xcassets */; };
 		AAE173DF29DEC865000BBE2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE173DE29DEC865000BBE2B /* Preview Assets.xcassets */; };
 		AAF9288229DF35E300FC47FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9288129DF35E300FC47FD /* LoginView.swift */; };
+		AAF9288429E07B8600FC47FD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9288329E07B8600FC47FD /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AAE173DB29DEC865000BBE2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE173DE29DEC865000BBE2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AAF9288129DF35E300FC47FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AAF9288329E07B8600FC47FD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		AAF9287F29DF35AF00FC47FD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AAF9288329E07B8600FC47FD /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF9288429E07B8600FC47FD /* LoginViewModel.swift in Sources */,
 				AAF9288229DF35E300FC47FD /* LoginView.swift in Sources */,
 				AAE173DA29DEC863000BBE2B /* ContentView.swift in Sources */,
 				AAE173D829DEC863000BBE2B /* BrainyApp.swift in Sources */,
