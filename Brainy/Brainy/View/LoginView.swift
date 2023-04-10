@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     @State private var id = ""
@@ -22,23 +23,32 @@ struct LoginView: View {
             VStack(spacing: 10){
                 Text("Email")
                 
-                TextField("", text: $id)
+                TextField("Enter your Email", text: $id)
                     .frame(maxWidth: 300, maxHeight: 30)
                     .overlay {
                         RoundedRectangle(cornerRadius: 2)
                             .stroke(Color.gray)
                     }
+                    .textInputAutocapitalization(.never)
                 
                 Text("Password")
-                TextField("", text: $pw)
+                SecureField("Enter your Password", text: $pw)
                     .frame(width: 300, height: 30)
                     .overlay {
                         RoundedRectangle(cornerRadius: 2)
                             .stroke(Color.gray)
                     }
+                    .textInputAutocapitalization(.never)
                 
                 Button {
-                    
+                    Auth.auth().signIn(withEmail: id, password: pw){ result, error in
+                        
+                        if let error = error{
+                            print("Login Fail : \(error)")
+                        } else {
+                            print("Login Success")
+                        }
+                    }
                 } label: {
                     Text("Sign In")
                         .foregroundColor(Color.white)
@@ -46,7 +56,7 @@ struct LoginView: View {
                 .frame(width: 300, height: 40)
                 .background(Color.blue)
                 
-                HStack(spacing: 150){
+                HStack(spacing: 120){
                     Button {
                         
                     } label: {
