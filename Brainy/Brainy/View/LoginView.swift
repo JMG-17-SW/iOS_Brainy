@@ -11,6 +11,7 @@ import Firebase
 struct LoginView: View {
     @State private var id = ""
     @State private var pw = ""
+    @StateObject private var viewModel = LoginViewModel()
     
     var body: some View {
         VStack{
@@ -41,14 +42,7 @@ struct LoginView: View {
                     .textInputAutocapitalization(.never)
                 
                 Button {
-                    Auth.auth().signIn(withEmail: id, password: pw){ result, error in
-                        
-                        if let error = error{
-                            print("Login Fail : \(error)")
-                        } else {
-                            print("Login Success")
-                        }
-                    }
+                    viewModel.Login(id, pw)
                 } label: {
                     Text("Sign In")
                         .foregroundColor(Color.white)
