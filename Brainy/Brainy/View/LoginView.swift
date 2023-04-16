@@ -15,60 +15,75 @@ struct LoginView: View {
     
     var body: some View {
         VStack{
-            ZStack{
-                Color("MainColor").edgesIgnoringSafeArea(.all)
-                Text("Brainy")
-                    .font(.system(size: 50))
-                    .foregroundColor(Color.white)
-            }
-            VStack(spacing: 10){
-                Text("Email")
-                
-                TextField("Enter your Email", text: $id)
-                    .frame(maxWidth: 300, maxHeight: 30)
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 2)
-                            .stroke(Color.gray)
-                    }
-                    .textInputAutocapitalization(.never)
-                
-                Text("Password")
-                SecureField("Enter your Password", text: $pw)
-                    .frame(width: 300, height: 30)
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 2)
-                            .stroke(Color.gray)
-                    }
-                    .textInputAutocapitalization(.never)
-                
-                Button {
-                    viewModel.Login(id, pw)
-                } label: {
-                    Text("Sign In")
+            GeometryReader{ geometry in
+                ZStack{
+                    Color("MainColor").edgesIgnoringSafeArea(.all)
+                    Text("Brainy")
+                        .font(.system(size: 50))
                         .foregroundColor(Color.white)
-                }
-                .frame(width: 300, height: 40)
-                .background(Color.blue)
+                }.frame(height: geometry.size.height * 0.6)
                 
-                HStack(spacing: 120){
-                    Button {
-                        
-                    } label: {
-                        Text("Forgot password")
-                            .foregroundColor(Color.gray)
-                    }
+                
+                VStack(spacing: 10){
+                    TextField("", text: $id)
+                    Text("Email")
+                    
+                    
+//                    //                    .frame(maxWidth: 300, maxHeight: 30)
+//                        .overlay {
+//                            RoundedRectangle(cornerRadius: 2)
+//                                .stroke(Color.gray)
+//                        }
+//                        .textInputAutocapitalization(.never)
+                    
+                    TextField("Enter your Email", text: $id)
+                        .frame(width: geometry.size.width * 0.8, height: 30)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 2).stroke(Color.gray)
+                        }
+                        .textInputAutocapitalization(.never)
+                    
+                    Text("Password")
+                    SecureField("Enter your Password", text: $pw)
+                        .frame(width: geometry.size.width * 0.8, height: 30)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 2)
+                                .stroke(Color.gray)
+                        }
+                        .textInputAutocapitalization(.never)
                     
                     Button {
-                        
+                        viewModel.Login(id, pw)
                     } label: {
-                        Text("Sign up")
+                        Text("Sign In")
+                            .foregroundColor(Color.white)
                     }
-
-
+                    .frame(width: geometry.size.width * 0.8, height: 40)
+                    .background(Color.blue)
+                    
+                    HStack(spacing: 120){
+                        Button {
+                            
+                        } label: {
+                            Text("Forgot password")
+                                .foregroundColor(Color.gray)
+                        }
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("Sign up")
+                        }
+                        
+                        
+                    }
                 }
+                .frame(height: geometry.size.height * 0.4)
+                .offset(y: geometry.size.height * 0.6)
             }
             
         }
+            
     }
 }
 
