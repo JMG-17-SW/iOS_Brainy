@@ -12,7 +12,8 @@ struct SignUpView: View {
     @State private var pw: String = ""
     @State private var pwCheck: String = ""
     @State private var nickname: String = ""
-    @State private var toggle: Bool = false
+    @State private var signupSuccess: Bool = false
+    @State private var signupFail: Bool = false
     @StateObject private var viewModel = LoginViewModel()
     
     var body: some View {
@@ -25,30 +26,38 @@ struct SignUpView: View {
 
                 }
                 
-                Section(header: Text("PW")) {
-                    SecureField("PW", text: $pw)
+                Section(header: Text("Password")) {
+                    SecureField("New Password", text: $pw)
                         .textInputAutocapitalization(.never)
 
-                    SecureField("PW Check", text: $pwCheck)
-                        .textInputAutocapitalization(.never)
-
+//                    SecureField("Confirm Password", text: $pwCheck)
+//                        .textInputAutocapitalization(.never)
                 }
                 
-                Section(header: Text("Nickname")) {
-                    TextField("Nickname", text: $nickname)
+                Section(header: Text("Name")) {
+                    TextField("name", text: $nickname)
                         .textInputAutocapitalization(.never)
                 }
                 
                 Button {
                     viewModel.SignUp(email, pw)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        print("Dispatch")
+                        signupSuccess = viewModel.loginSuccess
+                        signupFail = !viewModel.loginSuccess
+                    }
                 } label: {
-                    //                Text("START").foregroundColor(pw == pwCheck && !email.isEmpty && !pw.isEmpty ? Color.blue: Color.gray)
                     Text("Sign Up")
-                }.disabled(toggle)
+                }.alert("SignUp Fail", isPresented: $signupFail, actions: {
+                    Button("OK", role: .cancel){}
+                })
+                .fullScreenCover(isPresented: $signupSuccess) {
+                    MainView()
+                }
+//                .sheet(isPresented: $signupSuccess, content: {
+//                    MainView()
+//                })
             }
-            
-            
-            
         }
         
     }
