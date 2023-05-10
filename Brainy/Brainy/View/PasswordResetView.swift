@@ -12,36 +12,35 @@ struct PasswordResetView: View {
     @StateObject private var viewModel = LoginViewModel()
     @State private var resetFail = false
     @State private var resetSuccess = false
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        Form{
-            Section("") {
-                TextField("name", text: $email)
-                    .textInputAutocapitalization(.never)
-            }
-            Section("") {
-                Button {
-                    viewModel.PasswordReset(email)
-                    resetFail = viewModel.passResetFail
-                    resetSuccess = !viewModel.passResetFail
-                } label: {
-                    Text("Password Resset")
-                }.alert("잘못된 이메일입니다.", isPresented: $resetFail, actions: {
-                    Button("OK", role: .cancel){}
-                })
-                .alert("이메일을 전송했습니다.", isPresented: $resetSuccess) {
-                    Button("OK", role: .cancel){}
+        NavigationView{
+            Form{
+                Section("") {
+                    TextField("name", text: $email)
+                        .textInputAutocapitalization(.never)
                 }
-                .fullScreenCover(isPresented: $resetSuccess) {
-                    LoginView()
+                Section("") {
+                    Button {
+                        viewModel.PasswordReset(email)
+                        resetFail = viewModel.passResetFail
+                        resetSuccess = !viewModel.passResetFail
+                    } label: {
+                        Text("Password Resset")
+                    }.alert("잘못된 이메일입니다.", isPresented: $resetFail, actions: {
+                        Button("OK", role: .cancel){}
+                    })
+                    .alert("이메일을 전송했습니다.", isPresented: $resetSuccess) {
+                        Button("OK", role: .cancel){
+                            dismiss()
+                        }
+                    }
                 }
-//                .sheet(isPresented: $resetSuccess) {
-//                    LoginView()
-//                }
+                
+                
+                
             }
-            
-            
-            
         }
     }
 }
