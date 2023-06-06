@@ -7,26 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0034162A02544100CBF445 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0034152A02544100CBF445 /* MainView.swift */; };
+		AA3AAE2A29F953D700601702 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3AAE2829F953D700601702 /* LoginView.swift */; };
+		AA3AAE2B29F953D700601702 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3AAE2929F953D700601702 /* SignUpView.swift */; };
+		AA3AAE2D29F953E300601702 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3AAE2C29F953E300601702 /* LoginViewModel.swift */; };
+		AA3AAE3129F9544C00601702 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AA3AAE3029F9544C00601702 /* FirebaseAuth */; };
+		AA3AAE3329F954C900601702 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA3AAE3229F954C900601702 /* GoogleService-Info.plist */; };
+		AA43DBAE2A094661000CEE70 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43DBAD2A094661000CEE70 /* PasswordResetView.swift */; };
 		AAE173D829DEC863000BBE2B /* BrainyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE173D729DEC863000BBE2B /* BrainyApp.swift */; };
 		AAE173DA29DEC863000BBE2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE173D929DEC863000BBE2B /* ContentView.swift */; };
 		AAE173DC29DEC865000BBE2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE173DB29DEC865000BBE2B /* Assets.xcassets */; };
 		AAE173DF29DEC865000BBE2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE173DE29DEC865000BBE2B /* Preview Assets.xcassets */; };
-		AAF9288229DF35E300FC47FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9288129DF35E300FC47FD /* LoginView.swift */; };
-		AAF9288429E07B8600FC47FD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9288329E07B8600FC47FD /* LoginViewModel.swift */; };
+		AAEFAE0A2A20D1D200B9170C /* NewProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEFAE092A20D1D100B9170C /* NewProjectView.swift */; };
+		AAEFAEBD2A2F742F00B9170C /* BrainyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEFAEBC2A2F742F00B9170C /* BrainyUITests.swift */; };
+		AAEFAEBF2A2F742F00B9170C /* BrainyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEFAEBE2A2F742F00B9170C /* BrainyUITestsLaunchTests.swift */; };
+		AAEFAECC2A2F743800B9170C /* BrainyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEFAECB2A2F743800B9170C /* BrainyTests.swift */; };
+		AAFF06372A0B82B400F17D91 /* Bangers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFF06362A0B82B400F17D91 /* Bangers-Regular.ttf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AAEFAEC02A2F742F00B9170C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE173CC29DEC863000BBE2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE173D329DEC863000BBE2B;
+			remoteInfo = Brainy;
+		};
+		AAEFAECD2A2F743800B9170C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE173CC29DEC863000BBE2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE173D329DEC863000BBE2B;
+			remoteInfo = Brainy;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AA0034152A02544100CBF445 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AA3AAE2829F953D700601702 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AA3AAE2929F953D700601702 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		AA3AAE2C29F953E300601702 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AA3AAE3229F954C900601702 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA43DBAD2A094661000CEE70 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		AAE173D429DEC863000BBE2B /* Brainy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE173D729DEC863000BBE2B /* BrainyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainyApp.swift; sourceTree = "<group>"; };
 		AAE173D929DEC863000BBE2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAE173DB29DEC865000BBE2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE173DE29DEC865000BBE2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AAF9288129DF35E300FC47FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		AAF9288329E07B8600FC47FD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AAEFAE092A20D1D100B9170C /* NewProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectView.swift; sourceTree = "<group>"; };
+		AAEFAEBA2A2F742F00B9170C /* BrainyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEFAEBC2A2F742F00B9170C /* BrainyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainyUITests.swift; sourceTree = "<group>"; };
+		AAEFAEBE2A2F742F00B9170C /* BrainyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AAEFAEC92A2F743800B9170C /* BrainyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEFAECB2A2F743800B9170C /* BrainyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainyTests.swift; sourceTree = "<group>"; };
+		AAFF06342A0B815800F17D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AAFF06362A0B82B400F17D91 /* Bangers-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bangers-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AAE173D129DEC863000BBE2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3AAE3129F9544C00601702 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEFAEB72A2F742F00B9170C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEFAEC62A2F743800B9170C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,10 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA3AAE2E29F953F300601702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AAE173CB29DEC863000BBE2B = {
 			isa = PBXGroup;
 			children = (
 				AAE173D629DEC863000BBE2B /* Brainy */,
+				AAEFAEBB2A2F742F00B9170C /* BrainyUITests */,
+				AAEFAECA2A2F743800B9170C /* BrainyTests */,
 				AAE173D529DEC863000BBE2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				AAE173D429DEC863000BBE2B /* Brainy.app */,
+				AAEFAEBA2A2F742F00B9170C /* BrainyUITests.xctest */,
+				AAEFAEC92A2F743800B9170C /* BrainyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +120,10 @@
 		AAE173D629DEC863000BBE2B /* Brainy */ = {
 			isa = PBXGroup;
 			children = (
-				AAF9287E29DF35A800FC47FD /* Model */,
+				AAFF06352A0B81A300F17D91 /* Fonts */,
+				AAFF06342A0B815800F17D91 /* Info.plist */,
+				AA3AAE3229F954C900601702 /* GoogleService-Info.plist */,
+				AA3AAE2E29F953F300601702 /* Model */,
 				AAF9287F29DF35AF00FC47FD /* ViewModel */,
 				AAF9288029DF35C000FC47FD /* View */,
 				AAE173D729DEC863000BBE2B /* BrainyApp.swift */,
@@ -74,17 +142,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AAF9287E29DF35A800FC47FD /* Model */ = {
+		AAEFAEBB2A2F742F00B9170C /* BrainyUITests */ = {
 			isa = PBXGroup;
 			children = (
+				AAEFAEBC2A2F742F00B9170C /* BrainyUITests.swift */,
+				AAEFAEBE2A2F742F00B9170C /* BrainyUITestsLaunchTests.swift */,
 			);
-			path = Model;
+			path = BrainyUITests;
+			sourceTree = "<group>";
+		};
+		AAEFAECA2A2F743800B9170C /* BrainyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAEFAECB2A2F743800B9170C /* BrainyTests.swift */,
+			);
+			path = BrainyTests;
 			sourceTree = "<group>";
 		};
 		AAF9287F29DF35AF00FC47FD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AAF9288329E07B8600FC47FD /* LoginViewModel.swift */,
+				AA3AAE2C29F953E300601702 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -92,9 +170,21 @@
 		AAF9288029DF35C000FC47FD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AAF9288129DF35E300FC47FD /* LoginView.swift */,
+				AA3AAE2829F953D700601702 /* LoginView.swift */,
+				AA3AAE2929F953D700601702 /* SignUpView.swift */,
+				AA43DBAD2A094661000CEE70 /* PasswordResetView.swift */,
+				AA0034152A02544100CBF445 /* MainView.swift */,
+				AAEFAE092A20D1D100B9170C /* NewProjectView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AAFF06352A0B81A300F17D91 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF06362A0B82B400F17D91 /* Bangers-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +203,48 @@
 			dependencies = (
 			);
 			name = Brainy;
+			packageProductDependencies = (
+				AA3AAE3029F9544C00601702 /* FirebaseAuth */,
+			);
 			productName = Brainy;
 			productReference = AAE173D429DEC863000BBE2B /* Brainy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AAEFAEB92A2F742F00B9170C /* BrainyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEFAEC22A2F742F00B9170C /* Build configuration list for PBXNativeTarget "BrainyUITests" */;
+			buildPhases = (
+				AAEFAEB62A2F742F00B9170C /* Sources */,
+				AAEFAEB72A2F742F00B9170C /* Frameworks */,
+				AAEFAEB82A2F742F00B9170C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAEFAEC12A2F742F00B9170C /* PBXTargetDependency */,
+			);
+			name = BrainyUITests;
+			productName = BrainyUITests;
+			productReference = AAEFAEBA2A2F742F00B9170C /* BrainyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AAEFAEC82A2F743800B9170C /* BrainyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEFAECF2A2F743800B9170C /* Build configuration list for PBXNativeTarget "BrainyTests" */;
+			buildPhases = (
+				AAEFAEC52A2F743800B9170C /* Sources */,
+				AAEFAEC62A2F743800B9170C /* Frameworks */,
+				AAEFAEC72A2F743800B9170C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAEFAECE2A2F743800B9170C /* PBXTargetDependency */,
+			);
+			name = BrainyTests;
+			productName = BrainyTests;
+			productReference = AAEFAEC92A2F743800B9170C /* BrainyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,6 +259,14 @@
 					AAE173D329DEC863000BBE2B = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					AAEFAEB92A2F742F00B9170C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = AAE173D329DEC863000BBE2B;
+					};
+					AAEFAEC82A2F743800B9170C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = AAE173D329DEC863000BBE2B;
+					};
 				};
 			};
 			buildConfigurationList = AAE173CF29DEC863000BBE2B /* Build configuration list for PBXProject "Brainy" */;
@@ -141,11 +278,16 @@
 				Base,
 			);
 			mainGroup = AAE173CB29DEC863000BBE2B;
+			packageReferences = (
+				AA3AAE2F29F9544C00601702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AAE173D529DEC863000BBE2B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AAE173D329DEC863000BBE2B /* Brainy */,
+				AAEFAEB92A2F742F00B9170C /* BrainyUITests */,
+				AAEFAEC82A2F743800B9170C /* BrainyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,8 +297,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFF06372A0B82B400F17D91 /* Bangers-Regular.ttf in Resources */,
 				AAE173DF29DEC865000BBE2B /* Preview Assets.xcassets in Resources */,
 				AAE173DC29DEC865000BBE2B /* Assets.xcassets in Resources */,
+				AA3AAE3329F954C900601702 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEFAEB82A2F742F00B9170C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEFAEC72A2F743800B9170C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,14 +325,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF9288429E07B8600FC47FD /* LoginViewModel.swift in Sources */,
-				AAF9288229DF35E300FC47FD /* LoginView.swift in Sources */,
+				AA3AAE2B29F953D700601702 /* SignUpView.swift in Sources */,
+				AA0034162A02544100CBF445 /* MainView.swift in Sources */,
+				AA3AAE2A29F953D700601702 /* LoginView.swift in Sources */,
+				AAEFAE0A2A20D1D200B9170C /* NewProjectView.swift in Sources */,
 				AAE173DA29DEC863000BBE2B /* ContentView.swift in Sources */,
+				AA3AAE2D29F953E300601702 /* LoginViewModel.swift in Sources */,
 				AAE173D829DEC863000BBE2B /* BrainyApp.swift in Sources */,
+				AA43DBAE2A094661000CEE70 /* PasswordResetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEFAEB62A2F742F00B9170C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEFAEBD2A2F742F00B9170C /* BrainyUITests.swift in Sources */,
+				AAEFAEBF2A2F742F00B9170C /* BrainyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEFAEC52A2F743800B9170C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEFAECC2A2F743800B9170C /* BrainyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAEFAEC12A2F742F00B9170C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE173D329DEC863000BBE2B /* Brainy */;
+			targetProxy = AAEFAEC02A2F742F00B9170C /* PBXContainerItemProxy */;
+		};
+		AAEFAECE2A2F743800B9170C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE173D329DEC863000BBE2B /* Brainy */;
+			targetProxy = AAEFAECD2A2F743800B9170C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AAE173E029DEC865000BBE2B /* Debug */ = {
@@ -302,11 +494,13 @@
 				DEVELOPMENT_TEAM = W36L2A7H57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brainy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,11 +525,13 @@
 				DEVELOPMENT_TEAM = W36L2A7H57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brainy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +542,80 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAEFAEC32A2F742F00B9170C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W36L2A7H57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.BrainyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brainy;
+			};
+			name = Debug;
+		};
+		AAEFAEC42A2F742F00B9170C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W36L2A7H57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.BrainyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brainy;
+			};
+			name = Release;
+		};
+		AAEFAED02A2F743800B9170C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W36L2A7H57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.BrainyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brainy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brainy";
+			};
+			name = Debug;
+		};
+		AAEFAED12A2F743800B9170C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W36L2A7H57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.BrainyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brainy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brainy";
 			};
 			name = Release;
 		};
@@ -370,7 +640,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AAEFAEC22A2F742F00B9170C /* Build configuration list for PBXNativeTarget "BrainyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEFAEC32A2F742F00B9170C /* Debug */,
+				AAEFAEC42A2F742F00B9170C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEFAECF2A2F743800B9170C /* Build configuration list for PBXNativeTarget "BrainyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEFAED02A2F743800B9170C /* Debug */,
+				AAEFAED12A2F743800B9170C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA3AAE2F29F9544C00601702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA3AAE3029F9544C00601702 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA3AAE2F29F9544C00601702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE173CC29DEC863000BBE2B /* Project object */;
 }
